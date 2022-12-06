@@ -1,0 +1,529 @@
+/*Estilos generales*/
+@charset "UTF-8";
+@charset 'iso-8859-15';
+
+@font-face{
+  font-family: Arial, 'Times New Roman', Calibri;
+  src: url(Fuentes/arial.ttf), url(Fuentes/arial.eot), url(Fuentes/arial.otf), url(Fuentes/times.ttf), url(Fuentes/times.eot), url(Fuentes/times.otf), url(Fuentes/calibri.ttf), url(Fuentes/calibri.eot), url(Fuentes/calibri.otf);
+}
+
+.container{
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link { color: #FF0000; } /* Color del link (rojo) */
+.link:hover { color: #00FF00; } /* Color del hover (verde) */
+
+del {
+  text-decoration:line-through;
+  color:red;
+ }
+
+
+
+p {
+	font-family: Calibri, Arial, 'Times New Roman';
+ }
+
+ table {
+ 	border-spacing: 5px 10px;
+ 	border:2px solid black;
+ 	width: 50vw;
+ }
+ 
+ /* Formato texto página indice*/
+.formato_txt {
+  width: 70%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  float: center;
+}
+
+.formato-color {
+  color: #5AC20D;
+}
+
+.formato-color2 {
+  color: #310202;
+}
+
+ body {
+  margin: 0;
+  font-size: 1.2rem;
+ }
+
+
+
+td{
+     border:2px solid #03184D;
+     text-align: center;
+     padding: 5px;
+
+ }
+
+/*Zoom en imagenes*/
+.zoom {
+transition: transform 3s;
+}
+
+.zoom:hover {
+transform: scale(1.5);
+}
+
+/*Color tabla página RDL 6/2015 RGC*/
+.color_tabla {
+background-color: rgba(240, 230, 224);
+
+}
+
+/*Formato del simbolo de las listas desordenadas*/
+ul { 
+  list-style: outside square; 
+}
+/*Estilo del video pagina de inicio*/
+.div-round {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+        margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 39vw;
+    height: 22vw;
+}
+
+.div-round::before {
+    display: block;
+    content: "";
+
+}
+
+.iframe-round {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+
+}
+/*Pie de página*/
+footer {
+    background: black;
+    color: white;
+    padding: 1.2rem 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+
+
+/*Cabecera*/
+    #btn-menu {
+        display: none;
+    }
+
+    header label {
+        display: none;
+        width: 30px;
+        height: 30px;
+    }
+
+    header label:hover {
+        cursor: pointer;
+        background: green;
+    }
+
+            .imagen-menu {
+            width: 30px;
+            height: 30px;
+        }
+   
+    header {
+        background: black;
+        color: white;
+        padding: 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+    }
+        
+        .logo-nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+       .logo {
+
+        width: 300px;
+        height: 60px;
+        border-radius: 5px;
+
+
+       }
+
+   
+        .navigation ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .navigation ul li:hover {
+            background: #117B6E;
+            border-radius: 5px;
+        }
+
+        .navigation ul li a {
+            display: block;
+            padding: 10px 12px;
+            color:#fff;
+            text-decoration: none;
+            text-align: center;
+        }
+/*Macador del menú*/
+.active {
+    background: green;
+    border-radius: 5px;
+}
+
+/*Formato titulos*/
+.formato {
+    margin-top: 120px;
+    color: red;
+    text-align: center;
+    align-items: center;
+}
+
+.formato_serio {
+  margin-top: 120px;
+  color: #021A54;
+  text-align: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4,h5, h6 {
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, 'Times New Roman', Calibri;
+
+}
+/*Formato de la imagen con el título página inicio*/
+.imagen-seguridad {
+    width: 170px;
+    height: 100px;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+
+/*Formato imagen página Denuncias DGT*/
+.imagen-denuncia {
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+  vertical-align: middle;
+
+}
+
+/*Formato imagen derechos*/
+
+.imagen-derechos {
+  width: 640px;
+  height: 480px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+/*Ajustes imagenes de denuncias DGT*/
+
+.slider {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.slider ul {
+  display: flex;
+  padding:0;
+  width: 400%;
+
+  animation: cambio 30s infinite alternate;
+  animation-timing-function: ease-in;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes cambio {
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+
+}
+/*Responsive mínimo*/
+@media only screen and (min-width: 468px) {
+p, li{
+  font-size: 0.8rem;
+}
+h1 {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+    
+}
+@media only screen and (min-width: 748px) {
+p, li{
+  font-size: 0.9rem;
+}
+h1 {
+  font-size: 1.7rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+}
+@media only screen and (min-width: 1024px) {
+p, li{
+  font-size: 1rem;
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+  }
+@media only screen and (min-width: 1280px) {
+p, li{
+  font-size: 1.1rem;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
+
+}
+/*Ajustes responsivos máximos*/
+@media only screen and (min-width:320px) and (max-width:1170px) {
+
+
+    header label {
+        display: block;
+    }
+
+    .navigation {
+        position: absolute;
+        background: black;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 70%;
+    }
+
+    #btn-menu:checked ~ .navigation  {
+        margin: 0;
+    }
+    
+    .navigation {
+        position: fixed;
+        background: black;
+        width: 70%;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+    .logo {
+      position: relative;
+      z-index: 1;
+    }
+}
+
+
+/*Formulario de contacto*/
+
+
+.contacto{
+  height: 100%; 
+  background-color: #117B6E; 
+}
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 220px auto;
+  border-radius: 10px;  
+  padding-top: 5rem;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+ -webkit-box-shadow: 0px 1px 21px 0px rgba(172, 71, 145);
+ -moz-box-shadow: 0px 1px 21px 0px rgba(172, 71, 145);
+ box-shadow: 0px 1px 21px 0px rgba(172, 71, 145);
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #ab4493; 
+  border-color: #ab4493; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 190px;   
+  cursor: pointer;
+  color: white;
+  
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+.contact_titulo1{
+  font-size: 2.5rem;  
+  text-align: left; 
+  padding-bottom: 20px; 
+  color: #FF6400;
+}
+
+
+.contact_titulo3{
+  font-size: 1.3rem; 
+  padding-bottom: 30px;
+  color: #0e0e0e;  
+  text-align: left; 
+}
+
+
+.contact_txt{
+  font-size: 1.1rem; 
+  color: #0e0e0e;
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #FF6400;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #FF6400; 
+
+}
+

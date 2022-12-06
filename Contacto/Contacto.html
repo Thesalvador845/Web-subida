@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+   <html lang="es">
+      <head>
+        <meta charset="UTF-8">
+        <title>Formulario de contacto</title>
+          <link href="../Estilo/estilo.css" rel="stylesheet">
+          <link rel="icon" type="image/jpg" href="../Imagenes/barrera-vial.png"></link>
+    </head>
+    <body class="contacto"> 
+  
+   <main><div class="contact_form">
+
+    <div class="formulario">      
+      <h1 class="contact_titulo1">Formulario de contacto</h1>
+        <h3 class="contact_titulo3">Escríbenos y en breve nos pondremos en contacto contigo.</h3>
+
+
+          <form action="mailto:sdovzaf444@ramonycajal.net" method="post">       
+
+            
+                <p class="contact_txt">
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre" autofocus="">
+                </p>
+              
+                <p class="contact_txt">
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p class="contact_txt">
+                  <label for="telefono" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" pattern="[0-9]{9}">
+                </p>    
+                 
+
+              
+                <p class="contact_txt">
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p class="contact_txt">
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>  
+
+                <p class="contact_txt"> Elija una imagen para la denuncia </p>
+                <input type="file" name="archivo"><br>                  
+              
+                <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                <button type="reset">Limpiar Formulario</button>
+
+                <p class="aviso contact_txt">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+</main>
+
+<header>
+            <div class="container logo-nav-container">
+             
+                <a href="../index.html"> <img class="logo" src="../Imagenes/seguridad-vial.png"></a>
+                
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><img class="imagen-menu" src="../Imagenes/icono-menu.png" alt=""></label>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../Denuncias/DenunciasDGT.html">Denuncias DGT</a></li>
+                        <li><a href="../Obligaciones/Obligaciones.html">Obligaciones</a></li>
+                        <li><a href="../Derechos/Derechos.html">Derechos</a></li>
+                        <li><a href="../Reales decretos/RDL6-2015RGC.html">RDL 6/2015 RGC</a></li>
+                        <li><a href="../Reales decretos/RD1428-03RGC.html">RD 1428/03 RGC</a></li>
+                        <li><a class="active" href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+               <footer>
+        <div class="container">
+            <p class="copy">&copy; Salvador 2021 - Todos los derechos reservados</p>
+        </div>
+       </footer>
+    </body>
+</html>
